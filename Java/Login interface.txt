@@ -1,0 +1,7 @@
+package vehicle.landing;
+import java.rmi.Remote;
+
+public interface LoginInterface extends Remote
+{
+  boolean verify(String id, String password)throws Exception;
+}

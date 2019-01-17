@@ -1,0 +1,16 @@
+package vehicle.landing;
+
+import java.rmi.server.UnicastRemoteObject;
+public class Check extends UnicastRemoteObject implements LoginInterface
+{
+  public Check()throws Exception{}
+  public boolean verify(String id , String password) throws Exception
+  {
+    if(id.equals("Anshul") && password.equals("789"))
+    {
+            return true;
+    }
+    else 
+        return false;
+  }
+}
